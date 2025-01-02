@@ -39,8 +39,8 @@ Prefix command shortcuts
 - `prefix + c` for new window
 - `prefix + n` for next window
 - `prefix + p` for previous window
-- `prefix + "` or `prefix + v` for new vertical pane (vertical split)
-- `prefix + %` or `prefix + h` for new horizontal pane (horizonatl split)
+- `prefix + %` or `prefix + v` for new vertical pane (vertical split)
+- `prefix + "` or `prefix + h` for new horizontal pane (horizonatl split)
 - `prefix + arrow_keys` to move between panes
 - `prefix + d` to detach
 
@@ -49,6 +49,8 @@ Terminal commands for tmux
 - `tmux list-sessions` or `tmux ls` to list all active sessions
 
 Switching
-- Alt+arrow_keys to switch between panes without using the prefix
+- Alt+arrow_keys or Alt+vim_keys to switch between panes without using the prefix
 - Shift+arrow_keys to switch between windows without using the prefix
 
+Synchronization mode
+- `prefix + y` to toggle simultaneous editing of all panes at once
