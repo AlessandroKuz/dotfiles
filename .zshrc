@@ -130,4 +130,17 @@ for key ('j') bindkey -M vicmd ${key} history-substring-search-down
 unset key
 # }}} End configuration added by Zim install
 
-export EDITOR=nvim
+
+alias ll='ls -latr'
+alias vi='nvim'
+alias neofetch='fastfetch'
+alias invim='nvim $(fzf -m --preview="bat --color=always {}")'
+
+set -o vi
+EDITOR='nvim'
+
+# Setup fzf key bindings and fuzzy completion
+source <(fzf --zsh)
+
+
+eval "$(zoxide init --cmd cd zsh)"

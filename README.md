@@ -1,6 +1,11 @@
 # dotfiles
 A simple collection of all my dotfiles for linux
 
+## Commands and utils to explore
+[ ] fzf
+[ ] tmux
+[ ] nvim
+
 ## Requirements
 
 Ensure you have the following installed on your system (Arch Linux commands).
@@ -54,3 +59,14 @@ Switching
 
 Synchronization mode
 - `prefix + y` to toggle simultaneous editing of all panes at once
+
+### fzf
+- `C-t` opens fzf
+- `C-r` opens shell command history in fzf
+
+## Essential packages
+- neovim / nvim
+- tmux
+- fzf
+- zoxide
+
