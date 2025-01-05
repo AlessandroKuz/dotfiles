@@ -48,6 +48,7 @@ Prefix command shortcuts
 - `prefix + "` or `prefix + h` for new horizontal pane (horizonatl split)
 - `prefix + arrow_keys` to move between panes
 - `prefix + d` to detach
+- `prefix + z` to toggle zooming in and out of the selected pane
 
 Terminal commands for tmux
 - `tmux attach` or `tmux a` to attach to latest session, add `-t session` to attach to a specific session

@@ -19,7 +19,8 @@ setopt HIST_IGNORE_ALL_DUPS
 #
 
 # Set editor default keymap to emacs (`-e`) or vi (`-v`)
-bindkey -e
+#bindkey -e
+bindkey -v
 
 # Prompt for spelling correction of commands.
 #setopt CORRECT
@@ -37,7 +38,7 @@ WORDCHARS=${WORDCHARS//[\/]}
 ZIM_HOME=~/.zim
 
 # Use degit instead of git as the default tool to install and update modules.
-zstyle ':zim:zmodule' use 'degit'
+# zstyle ':zim:zmodule' use 'degit'
 
 # --------------------
 # Module configuration
@@ -134,10 +135,9 @@ unset key
 alias ll='ls -latr'
 alias vi='nvim'
 alias neofetch='fastfetch'
-alias invim='nvim $(fzf -m --preview="bat --color=always {}")'
+alias invim='fzf -m --preview="bat --color=always {}" --bind "enter:become(nvim {+})"'
 
-set -o vi
-EDITOR='nvim'
+export EDITOR='nvim'
 
 # Setup fzf key bindings and fuzzy completion
 source <(fzf --zsh)
