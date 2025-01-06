@@ -22,6 +22,35 @@ pacman -S git
 pacman -S stow
 ```
 
+### All packages
+#### pacman
+```
+pacman -S git
+```
+#### apt / apt-get
+```
+apt-get install git
+apt-get install stow
+apt-get install zsh
+curl -fsSL https://raw.githubusercontent.com/zimfw/install/master/install.zsh | zsh
+apt-get install btop
+apt-get install tmux
+apt-get install zoxide
+add-apt-repository ppa:neovim-ppa/stable
+apt-get update && sudo apt-get upgrade
+apt-get install neovim
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
+#### base
+```
+cd ~
+git clone https://github.com/AlessandroKuz/dotfiles
+cd dotfiles
+stow zsh
+stow tmux
+```
+
+
 ## Installation
 
 First, check out the dotfiles repo in your $HOME directory using git
