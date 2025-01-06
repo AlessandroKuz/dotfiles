@@ -136,6 +136,7 @@ alias ll='ls -latr'
 alias vi='nvim'
 alias neofetch='fastfetch'
 alias invim='fzf -m --preview="bat --color=always {}" --bind "enter:become(nvim {+})"'
+alias winhome='cd /mnt/c/Users/Utente'
 
 export EDITOR='nvim'
 
