@@ -132,6 +132,7 @@ unset key
 # }}} End configuration added by Zim install
 
 
+alias ls='lsd'
 alias ll='ls -latr'
 alias vi='nvim'
 alias neofetch='fastfetch'
